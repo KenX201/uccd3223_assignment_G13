@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".AddExpense">
+
+
+    <!-- Amount Input -->
+
+    <!-- Category Selector -->
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Amount"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="Select Category"
+        android:padding="10dp" />
+
+    <!-- Date Selector -->
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Select Date" />
+
+    <!-- Note Input -->
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <!-- Save Button -->
+
+    <!-- Delete Button (optional, visible only in edit mode) -->
+    <Button
+        android:id="@+id/saveExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Expense" />
+
+    <Button
+        android:id="@+id/deleteExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Expense"
+        android:visibility="gone" />
+
+</LinearLayout>
